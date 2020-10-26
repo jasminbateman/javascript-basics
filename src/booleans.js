@@ -11,19 +11,19 @@ const either = (a, b) => {
 };
 
 const none = (a, b) => {
-  return Boolean(!a && !b);
+  return negate(either(a || b));
 };
 
 const one = (a, b) => {
-  // your code here
+  return (!a && b) || (a && ! b);
 };
 
 const truthiness = a => {
-  // your code here
+  return Boolean(a);
 };
 
 const isEqual = (a, b) => {
-  // your code here
+  
 };
 
 const isGreaterThan = (a, b) => {
