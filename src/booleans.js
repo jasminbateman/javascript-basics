@@ -15,7 +15,7 @@ const none = (a, b) => {
 };
 
 const one = (a, b) => {
-  return (!a && b) || (a && ! b);
+  return (!a && b) || (a && !b);
 };
 
 const truthiness = a => {
@@ -23,39 +23,39 @@ const truthiness = a => {
 };
 
 const isEqual = (a, b) => {
-  
+  return Boolean(a === b);
 };
 
 const isGreaterThan = (a, b) => {
-  // your code here
+  return Boolean(a > b);
 };
 
 const isLessThanOrEqualTo = (a, b) => {
-  // your code here
+  return Boolean(a <= b);
 };
 
 const isOdd = a => {
-  // your code here
+  return a % 2 !== 0;
 };
 
 const isEven = a => {
-  // your code here
+  return Number.isInteger(a / 2);
 };
 
 const isSquare = a => {
-  // your code here
+  return Number.isInteger(Math.sqrt(a));
 };
 
 const startsWith = (char, string) => {
-  // your code here
+  return string.startsWith("a", char);
 };
 
 const containsVowels = string => {
-  // your code here
+  return string.search("[eoiaAEOI]") >= 0;
 };
 
 const isLowerCase = string => {
-  // your code here
+  return string.toLowerCase() === string;
 };
 
 module.exports = {
